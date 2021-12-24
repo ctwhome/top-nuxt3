@@ -20,7 +20,7 @@ Fastest and most comfortable development experience started template, by [@ctwho
 
 *   [ ] 🐘 Supabase - WIP - Full stack development with Auth, Realtime, Storage, and of course PostgreSQL
 *   [ ] 😃 Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
-*   [ ] 🌐 Multi-language support
+*   [ ] 🌐 Multi-language support with [vue-i18n](https://github.com/intlify/vue-i18n-next)
 *   [ ] 🍍 [State Management via Pinia](https://pinia.esm.dev/)
 *   [ ] 📥 APIs auto importing - for Composition API, VueUse and custom composables.
 *   [ ] 🏎 Zero-config cloud functions and deploy
