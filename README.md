@@ -14,10 +14,11 @@ Fastest and most comfortable development experience started template, by [@ctwho
 * [x] 🔥 The `<script setup>` syntax
 * [x] 🦾 TypeScript
 * [x] ⭐️ Format on save with ESLint (VSCode Settings file and WebStorm)
+* [x] ✨ All [Iconify](https://iconify.design/) on demand - +100.000 svg icons completely customizable
 
 ### Planned features:
 
-*   [-] 🐘 Supabase - WIP - Full stack development with Auth, Realtime, Storage, and of course PostgreSQL
+*   [ ] 🐘 Supabase - WIP - Full stack development with Auth, Realtime, Storage, and of course PostgreSQL
 *   [ ] 😃 Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 *   [ ] 🌐 Multi-language support
 *   [ ] 🍍 [State Management via Pinia](https://pinia.esm.dev/)

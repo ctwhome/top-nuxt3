@@ -301,6 +301,13 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@iconify/vue@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@iconify/vue/-/vue-3.1.1.tgz#3516b320680756cc9c38b49438af5a315619dca9"
+  integrity sha512-lpRis4y8XHx0LQG1pbD71BuDlYKzCG3xKNsTs6svajQQe1DgkBbt1PEERnJTnmo9UzihTR0Bq7OwPQt7zR25RQ==
+  dependencies:
+    cross-fetch "^3.1.4"
+
 "@koa/router@^9.0.1":
   version "9.4.0"
   resolved "https://registry.npmjs.org/@koa/router/-/router-9.4.0.tgz"
@@ -2005,7 +2012,7 @@ create-require@^1.1.1:
   resolved "https://registry.npmjs.org/create-require/-/create-require-1.1.1.tgz"
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
 
-cross-fetch@^3.0.6, cross-fetch@^3.1.0:
+cross-fetch@^3.0.6, cross-fetch@^3.1.0, cross-fetch@^3.1.4:
   version "3.1.4"
   resolved "https://registry.npmjs.org/cross-fetch/-/cross-fetch-3.1.4.tgz"
   integrity sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==

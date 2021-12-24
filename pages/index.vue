@@ -2,14 +2,11 @@
   <div class="container mx-auto">
 <!--    <tutorial class="mt-20" />-->
 <!--    <blog-list :posts="posts" :more="true" />-->
-    Optimized image
-    <nuxt-link to="about" class="btn">About page</nuxt-link>
+<!--    Optimized image-->
+    <nuxt-link to="about" class="btn my-3">About page</nuxt-link>
 
-    <NuxtLink to="/about">
-      About (internal link that belongs to the Nuxt App)
-    </NuxtLink>
 
-    <div class="w-[32rem] bg-amber-500">
+    <div class="w-[32rem] bg-amber-500 p-4">
       <h1>Welcome to Top Nuxt 3</h1>
       <ul>
         <li>Nuxt 3</li>
@@ -26,20 +23,32 @@
 
     </div>
 
-<!--    <nuxt-img src="large.jpg" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" />-->
+    <div class="mt-4">
+      <p>All icons from iconify</p>
+      <div class="flex gap-3 mt-3">
+
+        <Icon icon="mdi-light:home" width="48"/>
+        <Icon icon="ion:ios-cart" width="48"/>
+        <Icon icon="noto:anchor" width="48"/>
+        <Icon icon="fxemoji:alien" width="48"/>
+      </div>
+    </div>
+    <!--    <nuxt-img src="large.jpg" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" />-->
   </div>
 </template>
 
 <script setup lang="ts">
-  // async asyncData ({ $content, params }) {
-  //   // blog list
-  //   const posts = await $content('posts')
-  //     .limit(4)
-  //     .sortBy('date', 'asc')
-  //     .fetch()
-  //
-  //   return {
-  //     posts
-  //   }
-  // }
+
+import {Icon} from '@iconify/vue'
+// async asyncData ({ $content, params }) {
+//   // blog list
+//   const posts = await $content('posts')
+//     .limit(4)
+//     .sortBy('date', 'asc')
+//     .fetch()
+//
+//   return {
+//     posts
+//   }
+// }
 </script>
