@@ -1,10 +1,12 @@
+![](https://user-images.githubusercontent.com/4195550/147338199-cff47e80-f05c-4b3d-afe0-1c7b8aad08e4.png)
+
 # Top Nuxt 3 Starter Template
 
 Fastest and most comfortable development experience by [@ctwhome](https://github.com/ctwhome)
 
 ## Development Features
 
-*   [x] [💚 Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc. 
+*   [x] [💚 Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
 *   [x] ⚡️ Vite - Instant HMR
 *   [x] 🎨 [TailwindCSS 3](https://tailwindcss.com/) - JIT engine by default
 *   [ ] 👩‍🎨 [DaisyUI](https://daisyui.com) - Theme CSS components for TailwindCSS
@@ -28,15 +30,15 @@ Fastest and most comfortable development experience by [@ctwhome](https://github
 *   [ ] [VueUse](https://github.com/vueuse/vueuse) - a collection of useful composition APIs
 *   [ ] [Pinia](https://pinia.esm.dev/) - intuitive, type-safe, light, and flexible Store for Vue.
 
-
-
 ## Installation and running locally
+
 ```bash
 npx degit ctwhome/top-nuxt3 <directory-name>
 yarn install
 ```
 
 Start the development server on [http://localhost:3000](http://localhost:3000)
+
 ```bash
 yarn dev
 ```
