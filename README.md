@@ -1,7 +1,6 @@
 # Top Nuxt 3 Starter Template
 
-Fastest and most comfortable development experience.  
-We recommend looking at the [documentation](https://v3.nuxtjs.org).
+Fastest and most comfortable development experience by [@ctwhome](https://github.com/ctwhome)
 
 ## Development Features
 
@@ -29,25 +28,22 @@ We recommend looking at the [documentation](https://v3.nuxtjs.org).
 *   [ ] [VueUse](https://github.com/vueuse/vueuse) - a collection of useful composition APIs
 *   [ ] [Pinia](https://pinia.esm.dev/) - intuitive, type-safe, light, and flexible Store for Vue.
 
-## IDE
 
-We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https://github.com/johnsoncodehk/volar) to get the best experience (You might want to disable Vetur if you have it).
 
-## Setup
-
-Make sure to install the dependencies
-
+## Installation and running locally
 ```bash
+npx degit ctwhome/top-nuxt3 <directory-name>
 yarn install
 ```
 
-## Development
-
-Start the development server on http://localhost:3000
-
+Start the development server on [http://localhost:3000](http://localhost:3000)
 ```bash
 yarn dev
 ```
+
+## IDE
+
+We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https://github.com/johnsoncodehk/volar) to get the best experience (You might want to disable Vetur if you have it).
 
 ## Production
 
