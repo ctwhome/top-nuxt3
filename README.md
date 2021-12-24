@@ -2,7 +2,7 @@
 
 # Top Nuxt 3 Starter Template
 
-Fastest and most comfortable development experience by [@ctwhome](https://github.com/ctwhome)
+Fastest and most comfortable development experience started template, by [@ctwhome](https://github.com/ctwhome)
 
 ## Development Features
 
