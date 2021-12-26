@@ -2,11 +2,12 @@
 
 # Top Nuxt 3 Starter Template
 
-Fastest and most comfortable development experience started template, by [@ctwhome](https://github.com/ctwhome)
+Fastest and most comfortable development experience started template  
+ With 💚  from  [@ctwhome](https://github.com/ctwhome), inspired by [@antfu vitesse](https://github.com/antfu/vitesse)
 
 ## Development Features
 
-*   [x] [💚 Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
+*   [x] [❇️  Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
 *   [x] ⚡️ Vite - Instant HMR
 *   [x] 🎨 [TailwindCSS 3](https://tailwindcss.com/) - JIT engine by default
 *   [x] 👩‍🎨 [DaisyUI](https://daisyui.com) - Theme CSS components for TailwindCSS
