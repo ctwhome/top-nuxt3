@@ -1,6 +1,7 @@
 ![](https://user-images.githubusercontent.com/4195550/147338199-cff47e80-f05c-4b3d-afe0-1c7b8aad08e4.png)
 
 # Top Nuxt 3 Starter Template
+[![Netlify Status](https://api.netlify.com/api/v1/badges/76c6759d-35ef-4432-816a-a45faa514aa7/deploy-status)](https://app.netlify.com/sites/top-nuxt3/deploys)
 
 Fastest and most comfortable development experience started template  
  With 💚  from  [@ctwhome](https://github.com/ctwhome), inspired by [@antfu vitesse](https://github.com/antfu/vitesse)
