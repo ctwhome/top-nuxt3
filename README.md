@@ -8,15 +8,16 @@ Fastest and most comfortable development experience started template
 
 ## Development Features
 
-*   [x] [❇️  Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
-*   [x] ⚡️ Vite - Instant HMR
-*   [x] 🎨 [TailwindCSS 3](https://tailwindcss.com/) - JIT engine by default
-*   [x] 👩‍🎨 [DaisyUI](https://daisyui.com) - Theme CSS components for TailwindCSS
-*   [x] [🌈 Theme switcher](https://github.com/saadeghi/theme-change) - Custom theme and 22 themes to choose from.
-*   [x] 🔥 The `<script setup>` syntax
-*   [x] 🦾 TypeScript
-*   [x] ⭐️ Format on save with ESLint (VSCode Settings file and WebStorm)
-*   [x] ✨ All [Iconify](https://iconify.design/) on demand - +100.000 svg icons completely customizable
+* [x] [❇️  Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
+  * [x] SSR working with Netlify thanks to the new Nuxt 3 Functions
+* [x] ⚡️ Vite - Instant HMR
+* [x] 🎨 [TailwindCSS 3](https://tailwindcss.com/) - JIT engine by default
+* [x] 👩‍🎨 [DaisyUI](https://daisyui.com) - Theme CSS components for TailwindCSS
+* [x] [🌈 Theme switcher](https://github.com/saadeghi/theme-change) - Custom theme and 22 themes to choose from.
+* [x] 🔥 The `<script setup>` syntax
+* [x] 🦾 TypeScript
+* [x] ⭐️ Format on save with ESLint (VSCode Settings file and WebStorm)
+* [x] ✨ All [Iconify](https://iconify.design/) on demand - +100.000 svg icons completely customizable
 
 ### Planned features:
 

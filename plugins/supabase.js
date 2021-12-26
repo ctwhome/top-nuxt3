@@ -3,5 +3,9 @@ import { createClient } from '@supabase/supabase-js'
 
 export default defineNuxtPlugin(nuxtApp => {
   const config = useRuntimeConfig()
-  return createClient(config.SUPABASE_URL, config.SUPABASE_KEY)
+
+  // Check if the env variables are defined
+  return config.SUPABASE_URL && config.SUPABASE_KEY
+    ? createClient(config.SUPABASE_URL, config.SUPABASE_KEY)
+    : {}
 })

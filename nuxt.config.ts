@@ -1,11 +1,12 @@
 import { defineNuxtConfig } from 'nuxt3'
+import { VitePWA } from 'vite-plugin-pwa'
 
 /// //////////////////////////////////////////////
 // Site config
 // Domain where the website will be deployed
 const productionUrl = 'MY-APP-DOMAIN.netlify.app'
 const useLocalSupabase = false
-const siteName = 'Ctw Nuxt Basis - Template'
+const siteName = 'Ctw Top-Nuxt3 - Template'
 const siteShortName = 'Nuxt Template'
 const siteDescription = 'Ctw Nuxt base template with TailwindCss, content RSS, Supabase Auth, Composition API and many other goodies'
 const twitterUser = '@ctwhome'
@@ -16,10 +17,6 @@ const githubRepositoryName = 'nuxt'
 const isDev = process.env.NODE_ENV === 'development'
 export default defineNuxtConfig({
   // Environment variables
-  // env: {
-  //   SUPABASE_URL: process.env.SUPABASE_URL,
-  //   myVariable: process.env.NUXT_ENV_MY_VAR
-  // },
   publicRuntimeConfig: {
     SUPABASE_URL: process.env.SUPABASE_URL,
     SUPABASE_KEY: process.env.SUPABASE_KEY,
@@ -67,4 +64,24 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  vite:{
+    plugins: [
+      VitePWA({
+        includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
+        manifest: {
+          name: siteName,
+          short_name: siteShortName,
+          description: siteDescription,
+          theme_color: '#FF0000',
+          icons: [
+            {src: 'pwa-192x192.png', sizes: '192x192', type: 'image/png', },
+            {src: 'pwa-512x512.png', sizes: '512x512', type: 'image/png' },
+            {src: 'pwa-512x512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable',
+            }
+          ]
+        }
+      })
+    ]
+  }
 })
