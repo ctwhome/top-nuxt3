@@ -25,6 +25,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^1.29.1",
     "@tailwindcss/typography": "^0.5.0",
+    "@vueuse/nuxt": "^7.4.1",
     "daisyui": "^1.19.0",
     "theme-change": "^2.0.2"
   }

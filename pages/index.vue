@@ -17,34 +17,42 @@
         <li>Typescript</li>
         <li>Vue `script setup` and Composition API</li>
       </ul>
-
     </div>
 
-    <div class="mt-4">
-      <p>All icons from iconify</p>
-      <div class="flex gap-3 mt-3">
-        <Icon icon="mdi-light:home" width="48"/>
-        <Icon icon="ion:ios-cart" width="48"/>
-        <Icon icon="noto:anchor" width="48"/>
-        <Icon icon="fxemoji:alien" width="48"/>
+<div class="flex gap-8 my-8">
+
+    <div class="card text-center shadow-2xl max-w-[300px]">
+      <div class="card-body">
+        <h2 class="card-title">Iconify Icons</h2>
+        <p class="text-primary">Memory usage</p>
+
+        <div class="justify-center card-actions">
+          <div class="flex gap-3 mt-3">
+            <Icon icon="mdi-light:home" width="48"/>
+            <Icon icon="ion:ios-cart" width="48"/>
+            <Icon icon="noto:anchor" width="48"/>
+            <Icon icon="fxemoji:alien" width="48"/>
+          </div>
+        </div>
       </div>
     </div>
+
     <!--    <nuxt-img src="large.jpg" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" />-->
+
+    <!-- Vue Use Demo-->
+    <div class="card text-center shadow-2xl max-w-[300px]">
+      <div class="card-body">
+        <h2 class="card-title">Vue Use Demo</h2>
+        <p class="text-primary">Memory usage</p>
+
+        <div class="justify-center card-actions">
+        <memory-usage-demo/>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 </template>
 
 <script setup lang="ts">
-
-import {Icon} from '@iconify/vue'
-// async asyncData ({ $content, params }) {
-//   // blog list
-//   const posts = await $content('posts')
-//     .limit(4)
-//     .sortBy('date', 'asc')
-//     .fetch()
-//
-//   return {
-//     posts
-//   }
-// }
-</script>
+import {Icon} from '@iconify/vue'</script>

@@ -10,9 +10,10 @@ Fastest and most comfortable development experience started template
 ## Features
 
 *   [x] [❇️  Nuxt 3](https://v3.nuxtjs.org)
-    *   [x] 🔥 The `<script setup>` syntax
-    *   [x] 🏎  Zero-config cloud functions and deploy SSR working with Netlify thanks to the new Nuxt 3 Functions
-    *   [x] ESR, File-based routing, components auto importing, modules, etc.
+    * [x] 🔥 The `<script setup>` syntax
+    * [x] 🏎  Zero-config cloud functions and deploy SSR working with Netlify thanks to the new Nuxt 3 Functions
+    * [x] 📥 APIs auto importing - for Composition API, VueUse and custom composables.
+    * [x] ESR, File-based routing, components auto importing, modules, etc.
 *   [x] ⚡️ Vite - Instant HMR
 *   [x] 📴  PWA - [Vite Intlify plugin](https://github.com/intlify/nuxt3) (thanks to [@userquin](https://github.com/userquin) for the contribution)
     *   Offline mode, new content available prompt,
@@ -28,13 +29,12 @@ Fastest and most comfortable development experience started template
     *   [ ] Localize routes (/en/about, /es/about, ...)
 *   [ ] 🐘 Supabase - WIP - Full stack development with Auth, Realtime, Storage, and of course PostgreSQL
 *   [ ] 🍍 [State Management via Pinia](https://pinia.esm.dev/)
-*   [ ] 📥 APIs auto importing - for Composition API, VueUse and custom composables.
 *   [ ] 📄 Markdown HTML pages
 *   [ ] 📤 Feed RSS generator
 
 ### Nuxt Modules
 
-*   [ ] [VueUse](https://github.com/vueuse/vueuse) - a collection of useful composition APIs
+*   [x] [VueUse](https://github.com/vueuse/vueuse) - a collection of useful composition APIs
 *   [ ] [Pinia](https://pinia.esm.dev/) - intuitive, type-safe, light, and flexible Store for Vue.
 
 ## Installation and running locally
