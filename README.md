@@ -24,7 +24,7 @@ Fastest and most comfortable development experience started template
 *   [x] ⭐️ Format on save with ESLint (VSCode Settings file and WebStorm)
 *   [x] ✨ All [Iconify](https://iconify.design/) on-demand - +100.000 SVG icons completely customizable
 *   [x] 🌐 Multi-language support with [vue-i18n-next](https://github.com/intlify/vue-i18n-next) thanks to [@intlify/nuxt3](https://github.com/intlify/nuxt3)
-    *    [x]  YAML, JSON, JSON5 locale files
+    *   [x] YAML, JSON, JSON5 locale files
     *   [ ] Localize routes (/en/about, /es/about, ...)
 *   [ ] 🐘 Supabase - WIP - Full stack development with Auth, Realtime, Storage, and of course PostgreSQL
 *   [ ] 🍍 [State Management via Pinia](https://pinia.esm.dev/)
@@ -43,6 +43,15 @@ Fastest and most comfortable development experience started template
 npx degit ctwhome/top-nuxt3 <directory-name>
 yarn install
 ```
+## Updaging fork
+
+1.Add remote from original repository in your forked repository:
+```shell
+git remote add upstream git://github.com/ctwhome/top-nuxt3.git
+git fetch upstream
+```
+2. Updating your fork from original repo to keep up with their changes:
+```git pull upstream main```
 
 Start the development server on [http://localhost:3000](http://localhost:3000)
 
