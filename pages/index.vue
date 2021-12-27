@@ -24,7 +24,7 @@
     <div class="card text-center shadow-2xl max-w-[300px]">
       <div class="card-body">
         <h2 class="card-title">Iconify Icons</h2>
-        <p class="text-primary">Memory usage</p>
+        <p class="text-primary">More than 100.000 vector icons</p>
 
         <div class="justify-center card-actions">
           <div class="flex gap-3 mt-3">
