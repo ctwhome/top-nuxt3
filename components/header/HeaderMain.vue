@@ -6,13 +6,14 @@
 
     <!-- menu-->
     <div
-      class="hidden sm:flex sm:mx-auto sm:items-center sm:space-x-6"
+        class="hidden sm:flex sm:mx-auto sm:items-center sm:space-x-6"
     >
-<!--      <div v-for="item in menu.items" :key="item.path">-->
-<!--        <nuxt-link class="menu-link font-bold text-sm hover:text-primary" :to="item.path">-->
-<!--          {{ item.title }}-->
-<!--        </nuxt-link>-->
-<!--      </div>-->
+
+      <div v-for="item in menu" :key="item.path">
+        <nuxt-link class="menu-link font-bold text-sm hover:text-primary" :to="item.path">
+          {{ $t(item.title) }}
+        </nuxt-link>
+      </div>
     </div>
 <!--    <header-responsive-menu ref="menu" class="relative">-->
 <!--      <div class="p-6">-->
@@ -29,7 +30,7 @@
 <!--      </div>-->
 <!--    </header-responsive-menu>-->
 
-<!--    <switch-locale class="ml-auto" />-->
+    <switch-locale class="ml-auto"/>
     <daisyui-theme-switcher class="ml-auto" />
 <!--    <user-login-button class="mt-2 pr-4" />-->
   </header>
