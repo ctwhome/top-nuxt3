@@ -1,0 +1,29 @@
+/* Import with  */
+/* @import './scrollbar-color.css';  */
+
+:root {
+  --scrollbarTrack: hsl(var(--b2));
+  --scrollbarThumb: hsl(var(--b3));
+  --scrollbarThumbHover: hsl(var(--b1));
+}
+/* Scrollbar colors*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--scrollbarTrack);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbarThumb);
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbarThumbHover);
+}

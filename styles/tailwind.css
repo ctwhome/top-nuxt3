@@ -1,6 +1,9 @@
+@import './scrollbar-color.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 /* Base styles modifications
  * https://tailwindcss.com/docs/adding-base-styles
