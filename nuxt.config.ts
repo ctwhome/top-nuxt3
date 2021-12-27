@@ -1,6 +1,7 @@
-import {defineNuxtConfig} from 'nuxt3'
-import {VitePWA} from 'vite-plugin-pwa'
-import vueI18n from '@intlify/vite-plugin-vue-i18n'
+import { defineNuxtConfig } from 'nuxt3'
+import { VitePWA } from 'vite-plugin-pwa'
+import pwaConfigurationFactory from './pwaConfiguration'
+import vueI18n from '@intlify/vite-plugin-vue-i18n
 
 /// //////////////////////////////////////////////
 // Site config
@@ -16,6 +17,7 @@ const githubRepositoryName = 'nuxt'
 /// //////////////////////////////////////////////
 
 const isDev = process.env.NODE_ENV === 'development'
+
 export default defineNuxtConfig({
   // Environment variables
   publicRuntimeConfig: {
@@ -23,11 +25,13 @@ export default defineNuxtConfig({
     SUPABASE_KEY: process.env.SUPABASE_KEY,
   },
 
-  head: {
+  meta: {
     title: siteName,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      // required theme-color: pwa
+      { name: 'theme-color', content: '#f69435' },
       { name: 'format-detection', content: 'telephone=no' },
       // OG Social Media Cards
       { hid: 'description', name: 'description', content: siteDescription },
@@ -47,13 +51,23 @@ export default defineNuxtConfig({
       { hid: 'twitter:image', name: 'twitter:image', content: `https://${productionUrl}/OG-card.png` }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // required manifest, apple-touch-icon and mask-icon: pwa
+      // add manifest.webmanifest only on build?
+      { rel: 'manifest', href: '/manifest.webmanifest' },
+      { rel: 'apple-touch-icon', href: '/pwa/icon-512x512.png', sizes: '180x180' },
+      { rel: 'mask-icon', href: '/pwa/icon-512x512.png', color: '#ffffff' },
     ],
     htmlAttrs: {
       'data-theme': 'light' // https://daisyui.com/docs/default-themes
     }
   },
   css: ['~/styles/tailwind.css'],
+
+  // server middleware to serve sw.js, workbox-**.js and manifest.webmanifest
+  serverMiddleware: [
+    { path: '/', handler: '~/server-middleware/sw.js'},
+  ],
 
   build: {
     postcss: {
@@ -81,21 +95,7 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [
-      VitePWA({
-        includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
-        manifest: {
-          name: siteName,
-          short_name: siteShortName,
-          description: siteDescription,
-          theme_color: '#FF0000',
-          icons: [
-            {src: 'pwa-192x192.png', sizes: '192x192', type: 'image/png', },
-            {src: 'pwa-512x512.png', sizes: '512x512', type: 'image/png' },
-            {src: 'pwa-512x512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable',
-            }
-          ]
-        }
-      })
+      VitePWA(pwaConfigurationFactory(false, undefined, siteName, siteShortName, siteDescription))
     ]
   }
 })
