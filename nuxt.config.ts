@@ -1,5 +1,6 @@
-import { defineNuxtConfig } from 'nuxt3'
-import { VitePWA } from 'vite-plugin-pwa'
+import {defineNuxtConfig} from 'nuxt3'
+import {VitePWA} from 'vite-plugin-pwa'
+import vueI18n from '@intlify/vite-plugin-vue-i18n'
 
 /// //////////////////////////////////////////////
 // Site config
@@ -52,7 +53,7 @@ export default defineNuxtConfig({
       'data-theme': 'light' // https://daisyui.com/docs/default-themes
     }
   },
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/styles/tailwind.css'],
 
   build: {
     postcss: {
@@ -65,7 +66,20 @@ export default defineNuxtConfig({
     },
   },
 
-  vite:{
+  buildModules: [
+    // Internationalization with https://github.com/intlify/nuxt3
+    '@intlify/nuxt3'
+  ],
+
+  intlify: {
+    localeDir: 'locales', // set the `locales` directory at source directory of your Nuxt application
+    vueI18n: {
+      defaultSFCLang: 'yml',
+      // ...
+    }
+  },
+
+  vite: {
     plugins: [
       VitePWA({
         includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
