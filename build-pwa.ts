@@ -1,3 +1,6 @@
+/*
+
+TODO WORK IN PROGRESS THIS CODE DOESN'T BUILD
 import { VitePWA } from 'vite-plugin-pwa'
 import pwaConfigurationFactory from './pwaConfiguration'
 import {resolveConfig} from 'vite'
@@ -5,7 +8,7 @@ import {resolveConfig} from 'vite'
 // import { copyFileSync } from 'fs'
 
 const buildPwa = async() => {
-  // filter pages/* to onclude them on sw precache manifest to work offline
+  // filter pages/!* to onclude them on sw precache manifest to work offline
   const { default: entries } = await import('./.output/server/chunks/client.manifest.mjs')
   const pwaConfiguration = pwaConfigurationFactory(
     true,
@@ -41,3 +44,4 @@ const buildPwa = async() => {
 }
 
 buildPwa()
+*/
