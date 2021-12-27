@@ -1,7 +1,6 @@
 import { defineNuxtConfig } from 'nuxt3'
 import { VitePWA } from 'vite-plugin-pwa'
 import pwaConfigurationFactory from './pwaConfiguration'
-import vueI18n from '@intlify/vite-plugin-vue-i18n
 
 /// //////////////////////////////////////////////
 // Site config
