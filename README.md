@@ -6,28 +6,30 @@
 Fastest and most comfortable development experience started template  
  With 💚  from  [@ctwhome](https://github.com/ctwhome), inspired by [@antfu vitesse](https://github.com/antfu/vitesse)
 
-## Development Features
+## Features
 
-* [x] [❇️  Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
-  * [x] SSR working with Netlify thanks to the new Nuxt 3 Functions
+* [x] [❇️  Nuxt 3](https://v3.nuxtjs.org) 
+  * [x] 🔥 The `<script setup>` syntax
+  * [x] 🏎 Zero-config cloud functions and deploy SSR working with Netlify thanks to the new Nuxt 3 Functions
+  * [x] ESR, File-based routing, components auto importing, modules, etc.
 * [x] ⚡️ Vite - Instant HMR
+* [x] PWA - vite plugin (thanks to [userquin](https://github.com/userquin) for the contribution)
+  * Offline mode, new content available promt, 
 * [x] 🎨 [TailwindCSS 3](https://tailwindcss.com/) - JIT engine by default
-* [x] 👩‍🎨 [DaisyUI](https://daisyui.com) - Theme CSS components for TailwindCSS
-* [x] [🌈 Theme switcher](https://github.com/saadeghi/theme-change) - Custom theme and 22 themes to choose from.
-* [x] 🔥 The `<script setup>` syntax
+  * [x] 👩‍🎨 [DaisyUI](https://daisyui.com) - Theme CSS components for TailwindCSS
+  * [x] [🌈 Theme switcher](https://github.com/saadeghi/theme-change) - Custom theme and 22 themes to choose from.
 * [x] 🦾 TypeScript
+* [x] 💻 .env settings environments
 * [x] ⭐️ Format on save with ESLint (VSCode Settings file and WebStorm)
 * [x] ✨ All [Iconify](https://iconify.design/) on demand - +100.000 svg icons completely customizable
+* [x] 🌐 Multi-language support with [vue-i18n-next](https://github.com/intlify/vue-i18n-next) thanks to [@intlify/nuxt3](https://github.com/intlify/nuxt3)
+  * [ ] Localize routes (/en/about, /es/about, ...)
+* [ ] 🐘 Supabase - WIP - Full stack development with Auth, Realtime, Storage, and of course PostgreSQL
+* [ ] 🍍 [State Management via Pinia](https://pinia.esm.dev/)
+* [ ] 📥 APIs auto importing - for Composition API, VueUse and custom composables.
+* [ ] 📄 Markdown HTML pages
+* [ ] 📤 Feed RSS generator
 
-### Planned features:
-
-*   [ ] 🐘 Supabase - WIP - Full stack development with Auth, Realtime, Storage, and of course PostgreSQL
-*   [ ] 🌐 Multi-language support with [vue-i18n](https://github.com/intlify/vue-i18n-next)
-*   [ ] 🍍 [State Management via Pinia](https://pinia.esm.dev/)
-*   [ ] 📥 APIs auto importing - for Composition API, VueUse and custom composables.
-*   [ ] 🏎 Zero-config cloud functions and deploy
-*   [ ] 💻 .env settings environments
-*   [ ] 📄 Markdown HTML pages
 
 ### Nuxt Modules
 
