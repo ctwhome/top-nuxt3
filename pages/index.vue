@@ -1,20 +1,17 @@
 <template>
-  <div class="container mx-auto">
-<!--    <tutorial class="mt-20" />-->
-<!--    <blog-list :posts="posts" :more="true" />-->
-<!--    Optimized image-->
-    <nuxt-link to="about" class="btn my-3">About page</nuxt-link>
+  <div class="container mx-auto mt-10 flex flex-col justify-center">
+    <!--    <tutorial class="mt-20" />-->
+    <!--    <blog-list :posts="posts" :more="true" />-->
 
-
-    <div class="w-[32rem] bg-amber-500 p-4">
-      <h1>Welcome to Top Nuxt 3</h1>
-      <ul>
+    <div class="w-[32rem] bg-base-300 p-4">
+      <h1>{{ $t("welcome") }} Top Nuxt 3</h1>
+      <ul class="styled">
         <li>Nuxt 3</li>
         <li>TailwindCSS 3</li>
         <li>DaisyUI</li>
       </ul>
       <h3>Development experience DX</h3>
-      <ul>
+      <ul class="styled">
         <li>Ultra Fast HMR changes</li>
         <li>Eslint</li>
         <li>Typescript</li>
@@ -26,7 +23,6 @@
     <div class="mt-4">
       <p>All icons from iconify</p>
       <div class="flex gap-3 mt-3">
-
         <Icon icon="mdi-light:home" width="48"/>
         <Icon icon="ion:ios-cart" width="48"/>
         <Icon icon="noto:anchor" width="48"/>

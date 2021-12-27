@@ -1,6 +1,7 @@
 import { defineNuxtConfig } from 'nuxt3'
 import { VitePWA } from 'vite-plugin-pwa'
 import pwaConfigurationFactory from './pwaConfiguration'
+import vueI18n from '@intlify/vite-plugin-vue-i18n
 
 /// //////////////////////////////////////////////
 // Site config
@@ -24,7 +25,6 @@ export default defineNuxtConfig({
     SUPABASE_KEY: process.env.SUPABASE_KEY,
   },
 
-  // @ctwhome: it is meta not head!!!
   meta: {
     title: siteName,
     meta: [
@@ -62,7 +62,7 @@ export default defineNuxtConfig({
       'data-theme': 'light' // https://daisyui.com/docs/default-themes
     }
   },
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/styles/tailwind.css'],
 
   // server middleware to serve sw.js, workbox-**.js and manifest.webmanifest
   serverMiddleware: [
@@ -80,7 +80,20 @@ export default defineNuxtConfig({
     },
   },
 
-  vite:{
+  buildModules: [
+    // Internationalization with https://github.com/intlify/nuxt3
+    '@intlify/nuxt3'
+  ],
+
+  intlify: {
+    localeDir: 'locales', // set the `locales` directory at source directory of your Nuxt application
+    vueI18n: {
+      defaultSFCLang: 'yml',
+      // ...
+    }
+  },
+
+  vite: {
     plugins: [
       VitePWA(pwaConfigurationFactory(false, undefined, siteName, siteShortName, siteDescription))
     ]

@@ -7,7 +7,8 @@
   },
   "devDependencies": {
     "@iconify/vue": "^3.1.1",
-    "@nuxtjs/tailwindcss": "^4.2.1",
+    "@intlify/nuxt3": "^0.1.10",
+    "@intlify/vite-plugin-vue-i18n": "^3.2.1",
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
     "autoprefixer": "^10.4.0",

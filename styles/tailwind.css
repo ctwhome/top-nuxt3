@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles modifications
+ * https://tailwindcss.com/docs/adding-base-styles
+ */
+@layer base {
+    h1 {
+        @apply text-3xl font-medium
+    }
+    h2 {
+        @apply text-2xl;
+    }
+    h3 {
+        @apply text-xl;
+    }
+    h3 {
+        @apply text-lg;
+    }
+
+    ul.styled {
+        @apply my-3
+    }
+    ul.styled li{
+        @apply list-disc ml-10
+    }
+}
