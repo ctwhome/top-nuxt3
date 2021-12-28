@@ -3,7 +3,7 @@
     <!--    <tutorial class="mt-20" />-->
     <!--    <blog-list :posts="posts" :more="true" />-->
 
-    <div class="w-[32rem] bg-base-300 p-4">
+    <div class="max-w-[32rem] bg-base-300 p-4">
       <h1>{{ $t("welcome") }} Top Nuxt 3</h1>
       <ul class="styled">
         <li>Nuxt 3</li>
