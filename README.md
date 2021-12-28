@@ -15,7 +15,7 @@ Fastest and most comfortable development experience started template
     * [x] 📥 APIs auto importing - for Composition API, VueUse and custom composables.
     * [x] ESR, File-based routing, components auto importing, modules, etc.
 *   [x] ⚡️ Vite - Instant HMR
-*   [x] 📴  PWA - [Vite Intlify plugin](https://github.com/antfu/vite-plugin-pwa) (thanks to [@userquin](https://github.com/userquin) for the contribution)
+*   [x] 📴  PWA - [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) (thanks to [@userquin](https://github.com/userquin) for the contribution)
     *   Offline mode, new content available prompt,
 *   [x] 🎨 [TailwindCSS 3](https://tailwindcss.com/) - JIT engine by default
     *   [x] 👩‍🎨 [DaisyUI](https://daisyui.com) - Theme CSS components for TailwindCSS
