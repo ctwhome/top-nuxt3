@@ -4,8 +4,9 @@
 
 ![Netlify Status](https://api.netlify.com/api/v1/badges/76c6759d-35ef-4432-816a-a45faa514aa7/deploy-status)
 
-Fastest and most comfortable development experience started template  
+Fastest and most comfortable development experience started template.
  With 💚  from  [@ctwhome](https://github.com/ctwhome), inspired by [@antfu vitesse](https://github.com/antfu/vitesse)
+ Everything comes installed for a speedy staring with examples. Simply remove whay you don't need and your are good to go :)
 
 ## Features
 
