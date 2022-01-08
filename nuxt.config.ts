@@ -84,16 +84,14 @@ export default defineNuxtConfig({
     '@intlify/nuxt3'
   ],
 
-  intlify: {
-    localeDir: 'locales', // set the `locales` directory at source directory of your Nuxt application
-    vueI18n: {
-      defaultSFCLang: 'yml',
-      // ...
-    }
-  },
-
   vite: {
     plugins: [
+      Markdown({
+        headEnabled: true
+      }),
+      Vue({
+        include: [/\.md$/],
+      }),
       VitePWA(pwaConfigurationFactory(false, undefined, siteName, siteShortName, siteDescription))
     ]
   }
