@@ -52,7 +52,8 @@
 
 <script setup>
 const menu = [
-  { title: 'about', path: '/about'}
+  { title: 'blog', path: '/blog'},
+  { title: 'about', path: '/about'},
 ]
 </script>
 
