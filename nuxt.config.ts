@@ -1,4 +1,6 @@
 import { defineNuxtConfig } from 'nuxt3'
+import Vue from '@vitejs/plugin-vue'
+import Markdown from 'vite-plugin-md'
 import { VitePWA } from 'vite-plugin-pwa'
 import pwaConfigurationFactory from './pwaConfiguration'
 
@@ -86,11 +88,11 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [
-      Markdown({
-        headEnabled: true
-      }),
       Vue({
-        include: [/\.md$/],
+        include: [/\.md$/], // <--
+      }),
+      Markdown({
+        headEnabled: false
       }),
       VitePWA(pwaConfigurationFactory(false, undefined, siteName, siteShortName, siteDescription))
     ]

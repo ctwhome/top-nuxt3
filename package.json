@@ -21,6 +21,7 @@
     "tailwindcss": "^3.0.7",
     "typescript": "^4.5.4",
     "vite-plugin-md": "^0.11.7",
+    "vite-plugin-pages": "^0.19.9",
     "vite-plugin-pwa": "^0.11.12"
   },
   "dependencies": {
@@ -28,6 +29,16 @@
     "@tailwindcss/typography": "^0.5.0",
     "@vueuse/nuxt": "^7.4.1",
     "daisyui": "^1.19.0",
-    "theme-change": "^2.0.2"
+    "highlight.js": "^11.4.0",
+    "markdown-it": "^12.3.2",
+    "markdown-it-container": "^3.0.0",
+    "markdown-it-deflist": "^2.1.0",
+    "markdown-it-emoji": "^2.0.0",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-ins": "^3.0.1",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "theme-change": "^2.0.2",
+    "vue3-markdown-it": "^1.0.9"
   }
 }
