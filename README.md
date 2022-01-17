@@ -10,7 +10,8 @@ Everything comes installed for a speedy staring with examples. Simply remove wha
 With 💚  from  [@ctwhome](https://github.com/ctwhome), inspired by [@antfu vitesse](https://github.com/antfu/vitesse). 
 
 ## Features
-* [x] [❇️  Nuxt 3](https://v3.nuxtjs.org)
+
+*   [x] [❇️  Nuxt 3](https://v3.nuxtjs.org)
     *   [x] 🔥 The `<script setup>` syntax
     *   [x] 🏎  Zero-config cloud functions and deploy SSR working with Netlify thanks to the new Nuxt 3 Functions
     *   [x] 📥 APIs auto importing - for Composition API, VueUse and custom composables.
@@ -18,32 +19,34 @@ With 💚  from  [@ctwhome](https://github.com/ctwhome), inspired by [@antfu v
     *   [x] 🦾 TypeScript
     *   [x] 💻 .env settings environments
     *   [x] ⭐️ Format on save with ESLint (VSCode Settings file and WebStorm)
-* [x] ⚡️ Vite - Instant HMR
-* [x] 📴  PWA - [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) (thanks to [@userquin](https://github.com/userquin) for the contribution)
-    * Offline mode, new content available prompt,
-    * WIP PWA not working correctly.
-* [x] 🎨 [TailwindCSS 3](https://tailwindcss.com/) - JIT engine by default
+*   [x] ⚡️ Vite - Instant HMR
+*   [x] 📴  PWA - [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) (thanks to [@userquin](https://github.com/userquin) for the contribution)
+    *   Offline mode, new content available prompt,
+    *   WIP PWA not working correctly.
+*   [x] 🎨 [TailwindCSS 3](https://tailwindcss.com/) - JIT engine by default
     *   [x] 👩‍🎨 [DaisyUI](https://daisyui.com) - Theme CSS components for TailwindCSS
     *   [x] [🌈 Theme switcher](https://github.com/saadeghi/theme-change) - Custom theme and 22 themes to choose from.
-* [ ] 📄  Styled Markdown HTML components
+*   [ ] 📄  Styled Markdown HTML components
     *   [x] Render Vue and HTML from markdown
     *   [ ] Dynamic pages, (Limitation with Vite, I can't import dynamically files based on route params https://vitejs.dev/guide/features.html#glob-import)
-* [x] ✨ All [Iconify](https://iconify.design/) on-demand - +100.000 SVG icons completely customizable
-  * Note that SSR will throw a warning because the SVG are not being processed server side. https://docs.iconify.design/icon-components/vue/#ssr
-* [x] 🌐 Multi-language support with [vue-i18n-next](https://github.com/intlify/vue-i18n-next) thanks to [@intlify/nuxt3](https://github.com/intlify/nuxt3)
+*   [x] ✨ All [Iconify](https://iconify.design/) on-demand - +100.000 SVG icons completely customizable
+    *   Note that SSR will throw a warning because the SVG are not being processed server side. https://docs.iconify.design/icon-components/vue/#ssr
+*   [x] 🌐 Multi-language support with [vue-i18n-next](https://github.com/intlify/vue-i18n-next) thanks to [@intlify/nuxt3](https://github.com/intlify/nuxt3)
     *   [x] YAML, JSON, JSON5 locale files
     *   [ ] Localize routes: (/en/about, /es/about, ...)
-* [ ] 🐘 Supabase - WIP - Full stack development with Auth, Realtime, Storage, and of course PostgreSQL
-* [ ] 🍍 [State Management via Pinia](https://pinia.esm.dev/)
-* [ ] 📤 Feed RSS generator
+*   [ ] 🐘 Supabase - WIP - Full stack development with Auth, Realtime, Storage, and of course PostgreSQL
+*   [ ] 🍍 [State Management via Pinia](https://pinia.esm.dev/)
+*   [ ] 📤 Feed RSS generator
 
 ### Nuxt Modules
+
 *   [x] [VueUse](https://github.com/vueuse/vueuse) - a collection of useful composition APIs
 *   [ ] [Pinia](https://pinia.esm.dev/) - intuitive, type-safe, light, and flexible Store for Vue.
 
 ## Motivation and Personal Opinion
-Nuxt is awesome, I am trying to use Nuxt 3 as much as I can to at least have the same features working that I have on top-nuxt with Nuxt 2. But it is very difficult at this time since I can't find too much support from the Nuxt team and the Nuxt modules ecosystem is complely broken.
-This is hurting Nuxt a lot in my opinion. Not clear roadmaps and slow development suggests that there is not much capacity for the project. This has been a daily concern for me. I didnt' want to recognize the problem but it is starting feeling like the change between AngularJS to Angular 2 system, And it sucks.
+
+Nuxt is awesome, I am trying to use Nuxt 3 as much as I can to at least have the same features working that I have on [top-nuxt](https://github.com/ctwhome/top-nuxt) with Nuxt 2. But it is very difficult at this time since I can't find too much activity from the Nuxt team and the Nuxt modules ecosystem is completely broken IMO.  
+This is hurting Nuxt a lot: not having clear roadmaps and slow development suggest that there is not much capacity for the project. This has been a daily concern for me. I didn't want to recognize the problem but it is starting to feel like the change between AngularJS to Angular 2 system. :(
 
 ## Installation and running locally
 
