@@ -82,5 +82,3 @@ const pwaConfigurationFactory = (
 }
 
 export default pwaConfigurationFactory
-
-

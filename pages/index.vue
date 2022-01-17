@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto mt-10 flex flex-col justify-center">
+  <div class="container flex flex-col justify-center mx-auto mt-10">
     <!--    <tutorial class="mt-20" />-->
     <!--    <blog-list :posts="posts" :more="true" />-->
 
@@ -20,7 +20,6 @@
     </div>
 
 <div class="flex gap-8 my-8">
-
     <div class="card text-center shadow-2xl max-w-[300px]">
       <div class="card-body">
         <h2 class="card-title">Iconify Icons</h2>

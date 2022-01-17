@@ -49,15 +49,18 @@ export default defineNuxtConfig({
       { hid: 'twitter:url', name: 'twitter:url', content: `https://${productionUrl}` },
       { hid: 'twitter:title', name: 'twitter:title', content: siteName },
       { hid: 'twitter:description', name: 'twitter:description', content: siteDescription },
-      { hid: 'twitter:image', name: 'twitter:image', content: `https://${productionUrl}/OG-card.png` }
+      {hid: 'twitter:image', name: 'twitter:image', content: `https://${productionUrl}/OG-card.png`}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
       // required manifest, apple-touch-icon and mask-icon: pwa
       // add manifest.webmanifest only on build?
-      { rel: 'manifest', href: '/manifest.webmanifest' },
-      { rel: 'apple-touch-icon', href: '/pwa/icon-512x512.png', sizes: '180x180' },
-      { rel: 'mask-icon', href: '/pwa/icon-512x512.png', color: '#ffffff' },
+      {rel: 'manifest', href: '/manifest.webmanifest'},
+      {rel: 'apple-touch-icon', href: '/pwa/icon-512x512.png', sizes: '180x180'},
+      {rel: 'mask-icon', href: '/pwa/icon-512x512.png', color: '#FFF'},
+    ],
+    scripts: [
+      'https://buttons.github.io/buttons.js'
     ],
     htmlAttrs: {
       'data-theme': 'light' // https://daisyui.com/docs/default-themes

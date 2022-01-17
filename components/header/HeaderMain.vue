@@ -1,5 +1,4 @@
 <template>
-  <Script src="https://buttons.github.io/buttons.js"/>
   <Title>
     Top nuxt 3 - Template
   </Title>

@@ -21,7 +21,7 @@
       <div class="pt-6">
         <div class="relative lg:pb-2 mb-2 flex flex-wrap ">
           <p class="w-full lg:w-auto text-gray-400 text-sm text-center lg:text-left order-last lg:order-first ">
-            © {{ new Date().getFullYear() }}. All rights reserved.
+            © {{ new Date().getFullYear() }}. MIT License.
           </p>
           <div
             class="mx-auto"
