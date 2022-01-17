@@ -46,7 +46,7 @@ With 💚  from  [@ctwhome](https://github.com/ctwhome), inspired by [@antfu v
 ## Motivation and Personal Opinion
 
 Nuxt is awesome, I am trying to use Nuxt 3 as much as I can to at least have the same features working that I have on [top-nuxt](https://github.com/ctwhome/top-nuxt) with Nuxt 2. But it is very difficult at this time since I can't find too much activity from the Nuxt team and the Nuxt modules ecosystem is completely broken IMO.  
-This is hurting Nuxt a lot: not having clear roadmaps and slow development suggest that there is not much capacity for the project. This has been a daily concern for me. I didn't want to recognize the problem but it is starting to feel like the change between AngularJS to Angular 2 system. :(
+This is hurting Nuxt a lot: not having clear roadmaps and slow development (at least slow releases) suggest that there is not much capacity for the project?.
 
 ## Installation and running locally
 
