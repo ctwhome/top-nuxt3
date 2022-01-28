@@ -63,6 +63,7 @@ export default defineNuxtConfig({
       'https://buttons.github.io/buttons.js'
     ],
     htmlAttrs: {
+      'lang': 'en',
       'data-theme': 'light' // https://daisyui.com/docs/default-themes
     }
   },
