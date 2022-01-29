@@ -1,5 +1,5 @@
-# Ignore artifacts:
-.nuxt
-coverage
-.output
 node_modules
+*.yaml
+*.lock
+*.json
+.*
