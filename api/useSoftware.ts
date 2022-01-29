@@ -37,14 +37,16 @@ supabase
     // Check if the payload.new is in the software.list
     // if yes, delete it. That means that it comes from outside
     if (payload.eventType === 'DELETE') {
-      const deletedIdx = software.data.findIndex(i => i.id === payload.old.id) as number
+      const deletedIdx = software.data.findIndex(
+        (i) => i.id === payload.old.id
+      ) as number
       deletedIdx !== -1 && software.data.splice(deletedIdx, 1)
       return
     }
 
     // If the updated element is the same that the one existing in state,
     // do not update the local state
-    let localIdx = software.data.findIndex(i => i.id === payload.new.id)
+    let localIdx = software.data.findIndex((i) => i.id === payload.new.id)
     const eq = isequal(software.data[localIdx], payload.new)
     if (eq) {
       return
@@ -95,7 +97,7 @@ const fetchSoftwareId = async (id) => {
     return null
   }
 }
-const searchText = async (text:string = 'Key') => {
+const searchText = async (text: string = 'Key') => {
   try {
     software.fetching = true
     const { data, count, error } = await supabase

@@ -1,7 +1,14 @@
 <template>
   <div>
-    <div v-if="isLoggedIn" class="hover:bg-gray-100 rounded-full  h-12 w-12 flex items-center justify-center">
-      <img class="cursor-pointer h-8 w-8 rounded-full" :src="userSession.user.user_metadata.avatar_url" @click="toProfile">
+    <div
+      v-if="isLoggedIn"
+      class="hover:bg-gray-100 rounded-full h-12 w-12 flex items-center justify-center"
+    >
+      <img
+        class="cursor-pointer h-8 w-8 rounded-full"
+        :src="userSession.user.user_metadata.avatar_url"
+        @click="toProfile"
+      />
     </div>
     <div v-else>
       <!--      <button-->
@@ -56,17 +63,17 @@
 <script>
 import { userSession, loginWithProvider, isLoggedIn } from '~/api/auth'
 export default {
-  setup () {
+  setup() {
     return { userSession, loginWithProvider, isLoggedIn }
   },
-  data () {
+  data() {
     return {
       activeTab: 0,
       loginDialog: false
     }
   },
   methods: {
-    toProfile () {
+    toProfile() {
       this.$router.push({ name: 'profile' })
     }
   }

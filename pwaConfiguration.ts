@@ -1,4 +1,4 @@
-import {VitePWAOptions} from 'vite-plugin-pwa'
+import { VitePWAOptions } from 'vite-plugin-pwa'
 
 const pwaConfiguration: Partial<VitePWAOptions> = {
   includeManifestIcons: false,
@@ -21,15 +21,20 @@ const pwaConfiguration: Partial<VitePWAOptions> = {
     background_color: '#f69435',
     theme_color: '#f69435',
     icons: [
-      {src: '/pwa/icon-192x192.png', sizes: '192x192', type: 'image/png' },
-      {src: '/pwa/icon-512x512.png', sizes: '512x512', type: 'image/png' },
-      {src: '/pwa/icon-512x512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' }
+      { src: '/pwa/icon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { src: '/pwa/icon-512x512.png', sizes: '512x512', type: 'image/png' },
+      {
+        src: '/pwa/icon-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
+        purpose: 'any maskable'
+      }
     ]
   },
   workbox: {
     navigateFallback: '/',
     globPatterns: ['**/*.{js,mjs,css,html,ico,png,svg}'],
-    globIgnores: ['**/sw*', '**/workbox-*', '**/manifest.webmanifest'],
+    globIgnores: ['**/sw*', '**/workbox-*', '**/manifest.webmanifest']
     // for static generation (html files)
     // manifestTransforms: [async(entries) => {
     //   // manifest.webmanifest is added always by pwa plugin, so we remove it.
@@ -55,10 +60,10 @@ const pwaConfiguration: Partial<VitePWAOptions> = {
 
 const pwaConfigurationFactory = (
   build: boolean,
-  pages?: Array<{ url: string, revision?: string }>,
+  pages?: Array<{ url: string; revision?: string }>,
   siteName = 'Ctw Top-Nuxt3 - Template',
   siteShortName = 'Nuxt Template',
-  siteDescription = 'Ctw Nuxt base template with TailwindCss, content RSS, Supabase Auth, Composition API and many other goodies',
+  siteDescription = 'Ctw Nuxt base template with TailwindCss, content RSS, Supabase Auth, Composition API and many other goodies'
 ) => {
   const newPwaConfiguration: Partial<VitePWAOptions> = { ...pwaConfiguration }
   newPwaConfiguration.manifest['name'] = siteName
@@ -68,12 +73,15 @@ const pwaConfigurationFactory = (
   if (build) {
     newPwaConfiguration.workbox.globDirectory = '.output/public/'
     newPwaConfiguration.outDir = '.output/public/_nuxt/'
-    pages && (newPwaConfiguration.workbox.additionalManifestEntries = pages.reduce((acc, me) => {
-      acc.push(me)
-      return acc
-    }, []))
-  }
-  else {
+    pages &&
+      (newPwaConfiguration.workbox.additionalManifestEntries = pages.reduce(
+        (acc, me) => {
+          acc.push(me)
+          return acc
+        },
+        []
+      ))
+  } else {
     newPwaConfiguration.workbox.globDirectory = '.nuxt/dist/client/'
     newPwaConfiguration.outDir = '.nuxt/dist/client/'
   }

@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build && esno build-pwa.ts",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix .",
+    "format": "prettier .  --write"
   },
   "devDependencies": {
     "@iconify/vue": "^3.1.1",
@@ -12,12 +14,16 @@
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
     "autoprefixer": "^10.4.0",
-    "eslint": "^8.5.0",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^3.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.4.0",
     "esno": "^0.13.0",
     "https-localhost": "^4.7.0",
     "nuxt3": "latest",
     "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
     "tailwindcss": "^3.0.7",
     "typescript": "^4.5.4",
     "vite-plugin-md": "^0.11.7",

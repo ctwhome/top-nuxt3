@@ -1,18 +1,17 @@
 <template>
-  <Title>
-    Top nuxt 3 - Template
-  </Title>
+  <Title> Top nuxt 3 - Template </Title>
   <header class="flex relative items-center">
-    <nuxt-link class="hidden sm:block flex " to="/">
-      <Logo class="mx-3 mt-1"/>
+    <nuxt-link class="hidden sm:block flex" to="/">
+      <Logo class="mx-3 mt-1" />
     </nuxt-link>
 
     <!-- menu-->
-    <div
-        class="hidden sm:flex sm:mx-auto sm:items-center sm:space-x-6"
-    >
+    <div class="hidden sm:flex sm:mx-auto sm:items-center sm:space-x-6">
       <div v-for="item in menu" :key="item.path">
-        <nuxt-link class="menu-link font-bold text-sm hover:text-primary" :to="item.path">
+        <nuxt-link
+          class="menu-link font-bold text-sm hover:text-primary"
+          :to="item.path"
+        >
           {{ $t(item.title) }}
         </nuxt-link>
       </div>
@@ -32,18 +31,19 @@
     <!--      </div>-->
     <!--    </header-responsive-menu>-->
     <!-- Place this tag where you want the button to render. -->
-    <switch-locale class="ml-auto"/>
+    <switch-locale class="ml-auto" />
     <div class="ml-auto">
-
-      <a class="github-button"
-         href="https://github.com/ctwhome/top-nuxt3"
-         data-size="large" data-show-count="true"
-         aria-label="Star ctwhome/top-nuxt3 on GitHub"
-         target="_blank"
+      <a
+        class="github-button"
+        href="https://github.com/ctwhome/top-nuxt3"
+        data-size="large"
+        data-show-count="true"
+        aria-label="Star ctwhome/top-nuxt3 on GitHub"
+        target="_blank"
       >
         Star
       </a>
-      <daisyui-theme-switcher class="ml-auto"/>
+      <daisyui-theme-switcher class="ml-auto" />
     </div>
     <!--    <user-login-button class="mt-2 pr-4" />-->
   </header>
@@ -51,13 +51,13 @@
 
 <script setup>
 const menu = [
-  { title: 'blog', path: '/blog'},
-  { title: 'about', path: '/about'},
+  { title: 'blog', path: '/blog' },
+  { title: 'about', path: '/about' }
 ]
 </script>
 
 <style scoped>
-.menu-link.active{
-  @apply underline
+.menu-link.active {
+  @apply underline;
 }
 </style>

@@ -15,7 +15,7 @@
         />
       </svg>
       <span class="hidden md:inline">
-        {{$t('change-theme')}}
+        {{ $t('change-theme') }}
       </span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,9 @@
     >
       <ul class="p-4 menu compact">
         <li v-for="(theme, index) in themes" :key="index">
-          <a tabindex="0" :data-set-theme="theme.id" data-act-class="active">{{ theme.name }}</a>
+          <a tabindex="0" :data-set-theme="theme.id" data-act-class="active">{{
+            theme.name
+          }}</a>
         </li>
       </ul>
     </div>
@@ -43,7 +45,7 @@
 import { themeChange } from 'theme-change'
 
 export default {
-  data () {
+  data() {
     return {
       scrolled: false,
       themes: [
@@ -71,7 +73,7 @@ export default {
       ]
     }
   },
-  mounted () {
+  mounted() {
     themeChange(false)
   }
 }
