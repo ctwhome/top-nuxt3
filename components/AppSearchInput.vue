@@ -5,8 +5,8 @@
       type="search"
       autocomplete="off"
       placeholder="Search Articles"
-      class="block w-full pl-10 pr-3 py-2 truncate leading-5 placeholder-gray-500 border border-gray-500 text-gray-700 focus:border-gray-300 rounded-md focus:outline-none  text-base-content focus:bg-base-100"
-    >
+      class="block w-full pl-10 pr-3 py-2 truncate leading-5 placeholder-gray-500 border border-gray-500 text-gray-700 focus:border-gray-300 rounded-md focus:outline-none text-base-content focus:bg-base-100"
+    />
     <ul
       v-if="articles.length"
       class="z-10 absolute w-auto flex-1 top-40 bg-base-100 text-base-content rounded-md border border-gray-300 overflow-hidden"
@@ -24,14 +24,14 @@
 </template>
 <script>
 export default {
-  data () {
+  data() {
     return {
       searchQuery: '',
       articles: []
     }
   },
   watch: {
-    async searchQuery (searchQuery) {
+    async searchQuery(searchQuery) {
       if (!searchQuery) {
         this.articles = []
         return

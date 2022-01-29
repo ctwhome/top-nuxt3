@@ -1,5 +1,5 @@
-const tailwindTypography =require('@tailwindcss/typography')
-const daisyui= require('daisyui')
+const tailwindTypography = require('@tailwindcss/typography')
+const daisyui = require('daisyui')
 
 module.exports = {
   content: [
@@ -7,18 +7,15 @@ module.exports = {
     './layouts/**/*.vue',
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
-    './nuxt.config.{js,ts}',
+    './nuxt.config.{js,ts}'
   ],
   theme: {
-    extend: {},
+    extend: {}
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [
-    tailwindTypography,
-    daisyui
-  ],
+  plugins: [tailwindTypography, daisyui],
   daisyui: {
     themes: [
       {

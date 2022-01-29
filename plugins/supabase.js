@@ -1,7 +1,7 @@
 import { defineNuxtPlugin, useRuntimeConfig } from '#app'
 import { createClient } from '@supabase/supabase-js'
 
-export default defineNuxtPlugin(nuxtApp => {
+export default defineNuxtPlugin((nuxtApp) => {
   const config = useRuntimeConfig()
 
   // Check if the env variables are defined

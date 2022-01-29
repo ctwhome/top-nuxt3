@@ -37,14 +37,14 @@ supabase
     // Check if the payload.new is in the todos.list
     // if yes, delete it. That means that it comes from outside
     if (payload.eventType === 'DELETE') {
-      const deletedIdx = todos.data.findIndex(i => i.id === payload.old.id)
+      const deletedIdx = todos.data.findIndex((i) => i.id === payload.old.id)
       deletedIdx !== -1 && todos.data.splice(deletedIdx, 1)
       return
     }
 
     // If the updated element is the same that the one existing in state,
     // do not update the local state
-    let localIdx = todos.data.findIndex(i => i.id === payload.new.id)
+    let localIdx = todos.data.findIndex((i) => i.id === payload.new.id)
     const eq = isequal(todos.data[localIdx], payload.new)
     if (eq) {
       return

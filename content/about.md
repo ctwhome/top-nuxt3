@@ -1,16 +1,15 @@
 ---
 myVar: This is a Frontmatter variable!
 ---
+
 ### This file is being render from a Markdown file, and it contains HTML and Vue components inside it!
 
 with support for Vue Components:
 <daisyui-theme-switcher class="ml-auto"/>
 
-
-and html iframe embeded: 
+and html iframe embeded:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NuTU9YFqZqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 <p className="lead">
   Until now, trying to style an article, document, or blog post with Tailwind has been a tedious
@@ -33,13 +32,14 @@ It adds a new `prose` class that you can slap on any block of vanilla HTML conte
 <article class="prose">
   <h1>Garlic bread with cheese: What the science tells us</h1>
   <p>
-    For years parents have espoused the health benefits of eating garlic bread with cheese to their
-    children, with the food earning such an iconic status in our culture that kids will often dress
-    up as warm, cheesy loaf for Halloween.
+    For years parents have espoused the health benefits of eating garlic bread
+    with cheese to their children, with the food earning such an iconic status
+    in our culture that kids will often dress up as warm, cheesy loaf for
+    Halloween.
   </p>
   <p>
-    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
-    springing up around the country.
+    But a recent study shows that the celebrated appetizer may be linked to a
+    series of rabies cases springing up around the country.
   </p>
   <!-- ... -->
 </article>
@@ -126,10 +126,10 @@ Here's what a default `tailwind.config.js` file looks like at the time of writin
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {}
   },
   variants: {},
-  plugins: [],
+  plugins: []
 }
 ```
 
@@ -140,17 +140,17 @@ Hopefully that looks good enough to you.
 Nested lists basically always look bad which is why editors like Medium don't even let you do it, but I guess since some of you goofballs are going to do it we have to carry the burden of at least making it work.
 
 1. **Nested lists are rarely a good idea.**
-    - You might feel like you are being really "organized" or something but you are just creating a gross shape on the screen that is hard to read.
-    - Nested navigation in UIs is a bad idea too, keep things as flat as possible.
-    - Nesting tons of folders in your source code is also not helpful.
+   - You might feel like you are being really "organized" or something but you are just creating a gross shape on the screen that is hard to read.
+   - Nested navigation in UIs is a bad idea too, keep things as flat as possible.
+   - Nesting tons of folders in your source code is also not helpful.
 2. **Since we need to have more items, here's another one.**
-    - I'm not sure if we'll bother styling more than two levels deep.
-    - Two is already too much, three is guaranteed to be a bad idea.
-    - If you nest four levels deep you belong in prison.
+   - I'm not sure if we'll bother styling more than two levels deep.
+   - Two is already too much, three is guaranteed to be a bad idea.
+   - If you nest four levels deep you belong in prison.
 3. **Two items isn't really a list, three is good though.**
-    - Again please don't nest lists if you want people to actually read your content.
-    - Nobody wants to look at this.
-    - I'm upset that we even have to bother styling this.
+   - Again please don't nest lists if you want people to actually read your content.
+   - Nobody wants to look at this.
+   - I'm upset that we even have to bother styling this.
 
 The most annoying thing about lists in Markdown is that `<li>` elements aren't given a child `<p>` tag unless there are multiple paragraphs in the list item. That means I have to worry about styling that annoying situation too.
 
@@ -158,18 +158,18 @@ The most annoying thing about lists in Markdown is that `<li>` elements aren't g
 
   But this time with a second paragraph.
 
-    - These list items won't have `<p>` tags
-    - Because they are only one line each
+  - These list items won't have `<p>` tags
+  - Because they are only one line each
 
 - **But in this second top-level list item, they will.**
 
   This is especially annoying because of the spacing on this paragraph.
 
-    - As you can see here, because I've added a second line, this list item now has a `<p>` tag.
+  - As you can see here, because I've added a second line, this list item now has a `<p>` tag.
 
-      This is the second line I'm talking about by the way.
+    This is the second line I'm talking about by the way.
 
-    - Finally here's another list item so it's more like a list.
+  - Finally here's another list item so it's more like a list.
 
 - A closing list item, but with no nested list, because why not?
 
