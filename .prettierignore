@@ -1,5 +1,5 @@
 # Ignore artifacts:
-nuxt
+.nuxt
 coverage
 .output
 node_modules
