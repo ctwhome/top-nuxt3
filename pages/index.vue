@@ -65,7 +65,9 @@
         <p class="text-primary">Memory usage</p>
 
         <div class="justify-center card-actions">
-        <memory-usage-demo/>
+           <client-only>
+	           <memory-usage-demo/>
+           </client-only>
         </div>
       </div>
     </div>
