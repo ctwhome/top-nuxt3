@@ -45,7 +45,7 @@
       </a>
       <daisyui-theme-switcher class="ml-auto"/>
     </div>
-    <!--    <user-login-button class="mt-2 pr-4" />-->
+        <user-login-button class="mt-2 pr-4" />
   </header>
 </template>
 
@@ -53,6 +53,7 @@
 const menu = [
   { title: 'blog', path: '/blog'},
   { title: 'about', path: '/about'},
+  { title: 'protected', path: '/profile'}
 ]
 </script>
 

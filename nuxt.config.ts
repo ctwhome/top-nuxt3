@@ -26,6 +26,15 @@ export default defineNuxtConfig({
     SUPABASE_KEY: process.env.SUPABASE_KEY,
   },
 
+  env: {
+    supabaseUrl: isDev && useLocalSupabase ? 'http://localhost:8000' : process.env.SUPABASE_URL,
+    supabaseKey: isDev && useLocalSupabase
+      // super-secret-jwt-token-with-at-least-32-characters-long
+      ? 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTYwMzk2ODgzNCwiZXhwIjoyNTUwNjUzNjM0LCJhdWQiOiIiLCJzdWIiOiIiLCJSb2xlIjoicG9zdGdyZXMifQ.magCcozTMKNrl76Tj2dsM7XTl_YH0v0ilajzAvIlw3U'
+      : process.env.SUPABASE_KEY
+  },
+
+
   meta: {
     title: siteName,
     meta: [

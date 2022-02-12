@@ -3,20 +3,40 @@
     <!--    <tutorial class="mt-20" />-->
     <!--    <blog-list :posts="posts" :more="true" />-->
 
-    <div class="max-w-[32rem] bg-base-300 p-4">
-      <h1>{{ $t("welcome") }} Top Nuxt 3</h1>
-      <ul class="styled">
-        <li>Nuxt 3</li>
-        <li>TailwindCSS 3</li>
-        <li>DaisyUI</li>
-      </ul>
-      <h3>Development experience DX</h3>
-      <ul class="styled">
-        <li>Ultra Fast HMR changes</li>
-        <li>Eslint</li>
-        <li>Typescript</li>
-        <li>Vue `script setup` and Composition API</li>
-      </ul>
+    <div class="flex">
+
+      <div class="w-full bg-base-300 p-4">
+        <h1>{{ $t("welcome") }} Top Nuxt 3</h1>
+        <ul class="styled">
+          <li>Nuxt 3</li>
+          <li>Supabase</li>
+          <li>TailwindCSS 3 with DaisyUI</li>
+        </ul>
+        <h3>Development experience DX</h3>
+        <ul class="styled">
+          <li>Ultra Fast HMR changes</li>
+          <li>Eslint</li>
+          <li>Typescript</li>
+          <li>Vue `script setup` and Composition API</li>
+        </ul>
+      </div>
+      <div class="w-full p-4 flex flex-col gap-2">
+        <strong>Composables</strong>
+
+        <div class="flex">
+          <p>is user loggedIn: {{ isLoggedIn() }}</p>
+        </div>
+        <div class="flex">
+
+          <div class="btn btn-sm" @click="color = 'red'">change</div>
+          <p>Current color: {{ color }}</p>
+        </div>
+        <div class="flex">
+          <div class="btn btn-sm" @click="counter++">plus</div>
+          <p>Current counter: {{ counter }}</p>
+
+        </div>
+      </div>
     </div>
 
 <div class="flex gap-8 my-8">
@@ -55,4 +75,8 @@
 
 <script setup lang="ts">
 import {Icon} from '@iconify/vue'
+
+const {user, isLoggedIn, loginWithSocialProvider} = useAuth();
+const color = useColor()
+const counter = useCounter()
 </script>

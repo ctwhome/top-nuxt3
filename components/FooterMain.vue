@@ -21,7 +21,7 @@
       <div class="pt-6">
         <div class="relative lg:pb-2 mb-2 flex flex-wrap ">
           <p class="w-full lg:w-auto text-gray-400 text-sm text-center lg:text-left order-last lg:order-first ">
-            © {{ new Date().getFullYear() }}. MIT License.
+            © {{ new Date().getFullYear() }} MIT License  <a href="https://github.com/ctwhome" target="_blank">@ctwhome</a>
           </p>
           <div
             class="mx-auto"
