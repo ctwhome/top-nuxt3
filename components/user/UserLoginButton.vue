@@ -33,7 +33,6 @@
 <script setup lang="ts">
 const  { user, isLoggedIn } = useAuth()
 
-console.log('🎹 user', user);
 const router = useRouter()
 function toProfile () {
   router.push('')

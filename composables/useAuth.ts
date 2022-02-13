@@ -1,5 +1,5 @@
 import {Provider} from '@supabase/gotrue-js'
-import useSupabase from '~/composables/supabase'
+import useSupabase from '~/composables/useSupabase'
 
 const user = ref(null)
 
@@ -87,9 +87,9 @@ export default function useAuth() {
    * (ie. support "Forgot Password?")
    */
   const sendPasswordRestEmail = async (email) => {
-    const {user, error} = await supabase.auth.api.resetPasswordForEmail(email)
+    const {data, error} = await supabase.auth.api.resetPasswordForEmail(email)
     if (error) throw error
-    return user
+    return data
   }
 
   const resetPassword = async (accessToken, newPassword) => {
