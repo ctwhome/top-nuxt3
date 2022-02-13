@@ -38,7 +38,8 @@ export default function useAuth() {
 
   const loginWithSocialProvider = async (provider: Provider) => {
     const {user, error} = await supabase.auth.signIn({provider}, {
-      redirectTo: 'http://localhost:3000'
+      // redirect to localhost if you are running on dev mode
+      redirectTo:  process.dev ? 'http://localhost:3000': undefined
     })
     if (error) throw error
     return user
