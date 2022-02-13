@@ -4,7 +4,6 @@ import useSupabase from '~/composables/useSupabase'
 const user = ref(null)
 
 export default function useAuth() {
-
   const {supabase} = useSupabase()
 
   /**
@@ -35,7 +34,6 @@ export default function useAuth() {
       redirectTo: 'http://localhost:3000'
     })
     if (error) throw error
-    console.log('🎹 user', user)
     return user
   }
 
