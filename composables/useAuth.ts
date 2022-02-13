@@ -2,10 +2,17 @@ import {Provider} from '@supabase/gotrue-js'
 import useSupabase from '~/composables/useSupabase'
 
 const user = ref(null)
+const {supabase} = useSupabase()
+
+/**
+   * Listen for login state changes
+   */
+supabase.auth.onAuthStateChange((event, session) => {
+  const { user } = useAuth()
+  user.value = session?.user || null
+})
 
 export default function useAuth() {
-  const {supabase} = useSupabase()
-
   /**
    * Login with email and password
    */
