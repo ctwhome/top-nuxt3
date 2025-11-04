@@ -1,3 +1,8 @@
+> ⚠️ **This repository has been moved to [top-frameworks monorepo](https://github.com/ctwhome/top-frameworks/tree/main/top-nuxt3)**
+> 
+> This repository is now archived. All development continues in the monorepo.
+> Please update your bookmarks and references.
+
 ![](https://user-images.githubusercontent.com/4195550/147338199-cff47e80-f05c-4b3d-afe0-1c7b8aad08e4.png)
 
 # Top Nuxt 3 Starter Template
